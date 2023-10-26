@@ -49,9 +49,56 @@ button {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+button:hover {
+  background-color: hsl(4, 100%, 67%);
+  border: none;
+  transition: ease-in 0.1s;
+}
 .check-lines {
   margin-top: -25px;
 }
 label {
   font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    max-width: 375px;
+  }
+
+  h1 {
+    margin: none;
+    font-size: 48px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .left-column {
+    order: 2;
+  }
+
+  .right-column {
+    order: 1;
+  }
+
+  .container .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .check-lines {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  button {
+    margin-top: 60px;
+  }
+  .right-img {
+    clip-path: inset(10% 0% round 0px 0px 20px 20px);
+    padding: none;
+    max-width: 375px;
+  }
 }
